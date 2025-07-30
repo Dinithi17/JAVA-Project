@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<element>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee  
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+         
+     <servlet>
+         <servlet-name>AddTrain</servlet-name>
+         <servlet-class>com.train.AddTrainServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+        <servlet-name>AddTrain</servlet-name>
+        <url-pattern>/AddTrainServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+        <servlet-name>UpdateTrain</servlet-name>
+        <servlet-class>com.train.UpdateTrainServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+        <servlet-name>UpdateTrain</servlet-name>
+        <url-pattern>/UpdateTrainServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+         <servlet-name>DeleteTrain</servlet-name>
+         <servlet-class>com.train.DeleteTrainServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+          <servlet-name>DeleteTrain</servlet-name>
+          <url-pattern>/DeleteTrainServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+ <!-- LOGIN -->   
+     <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.passenger.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.passenger.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    
+    <display-name>UpdateServlet</display-name>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.passenger.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    
+    <display-name>DeleteServlet</display-name>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.passenger.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    
+    <display-name>UserAccountServlet</display-name>
+    <servlet-name>UserAccountServlet</servlet-name>
+    <servlet-class>com.passenger.UserAccountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserAccountServlet</servlet-name>
+    <url-pattern>/UserAccountServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.passenger.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    
+    <display-name>AdminLogoutServlet</display-name>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <servlet-class>com.train.AdminLogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <url-pattern>/AdminLogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!-- Booking -->
+   <servlet>
+              
+              <servlet-name>booking</servlet-name>
+              <servlet-class>ticketBook.bookingServlet</servlet-class>
+         
+         </servlet>
+         <servlet-mapping>
+         
+               <servlet-name>booking</servlet-name>
+               <url-pattern>/bookingServlet</url-pattern>
+               
+         </servlet-mapping>
+         
+         <servlet>
+              
+              <servlet-name>updatebooking</servlet-name>
+              <servlet-class>ticketBook.updateTicketServlet</servlet-class>
+              
+         </servlet>
+         <servlet-mapping>
+         
+               <servlet-name>updatebooking</servlet-name>
+               <url-pattern>/updateTicketServlet</url-pattern>
+               
+         </servlet-mapping>
+         
+         <servlet>
+                <servlet-name>deletebooking</servlet-name>
+                <servlet-class>ticketBook.deleteTicketServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         
+                <servlet-name>deletebooking</servlet-name>
+                <url-pattern>/deleteTicketServlet</url-pattern>
+         </servlet-mapping>
+         
+         
+         <!-- feedback -->
+         
+         <servlet>
+  
+  	<servlet-name>MessageServlet</servlet-name>
+  	<servlet-class>com.feedback.MessageServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>MessageServlet</servlet-name>
+ 	<url-pattern>/MessageServlet</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ <servlet>
+  
+  	<servlet-name>UpdateMessage</servlet-name>
+  	<servlet-class>com.feedback.UpdateMessageServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>UpdateMessage</servlet-name>
+ 	<url-pattern>/updatemessagecustservlet</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ <servlet>
+  
+  	<servlet-name>ViewMessage</servlet-name>
+  	<servlet-class>com.feedback.ViewMessageServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>ViewMessage</servlet-name>
+ 	<url-pattern>/CustomerMessageServlet</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ 
+  <servlet>
+  
+  	<servlet-name>DeleteMessage</servlet-name>
+  	<servlet-class>com.feedback.DeleteMessageServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>DeleteMessage</servlet-name>
+ 	<url-pattern>/DeleteMessageServlet</url-pattern>
+ 
+ </servlet-mapping>
+ 
+  <servlet>
+  
+  	<servlet-name>ViewCusMessage</servlet-name>
+  	<servlet-class>com.feedback.CustomerMessageServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>ViewCusMessage</servlet-name>
+ 	<url-pattern>/CustomerMessageServlet</url-pattern>
+ 
+ </servlet-mapping>
+ 
+<!--  <servlet>
+  
+  	<servlet-name>UpdateMessageCus</servlet-name>
+  	<servlet-class>com.feedback.UpdateMessageServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>UpdateMessageCus</servlet-name>
+ 	<url-pattern>/updatemessagecustservlet</url-pattern>
+ 
+ </servlet-mapping> -->
+
+</web-app>
+</element>
+
+<!--  <web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4" id="WebApp_ID">
+	<display-name>TrainDemo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
+-->

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+     
+    body {
+             
+            min-height: 80vh;
+            background-color: #ffffff;
+            position: relative;
+            background-image: url('../images/dinithi.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+        
+     .account-section {
+           
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:5%;
+            margin-bottom:5%;
+            
+        }    
+   
+    .container2 {
+            
+            max-width: 450px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+            transition: transform 0.3s;
+        }
+        
+      h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+        }
+     
+      .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        } 
+        
+       input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 14px;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            background-color: #f9f9f9;
+            transition: all 0.3s;
+        }
+
+        input:focus{
+            border-color: #6c63ff;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+            outline: none;
+        }
+        
+         .btn {
+            background: linear-gradient(135deg, #6c63ff, #32a5ff);
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #5751d9, #2a8fe9);
+        }         
